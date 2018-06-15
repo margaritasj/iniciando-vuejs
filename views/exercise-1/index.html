@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejercicio 1</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <!-- El div con el id app,Vue podrá encontrar el elemento y hacer toda la magia 
+    (observadores, eventos, etc) para mantener enlazados los datos con la vista, 
+    si, este markup es nuestra vista!.
+    La vista esta compuesta por un cuadro de texto y un elemento span. -->
+  <div id="app">
+    <input type="text" placeholder="Escribe tu nombre" v-model="nombre" class="form-control">
+    <br>
+    <span> {{nombre}} </span>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
